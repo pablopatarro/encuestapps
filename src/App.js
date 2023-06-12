@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+//Para el control de rutas...
+import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+import ErrorPage from "./Components/error-page";
+import Home from "./Routes/home";
+import Registro from "./Routes/registro";
+import Inicio from "./Routes/inicio";
 
-function App() {
+//Cada elemento del array es una "página" que se va a cargar.
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/registro",
+    element: <Registro/>,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/inicio",
+    element: <Inicio/>,
+    errorElement: <ErrorPage />,
+  }
+]);
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RouterProvider router={router}/>
   );
 }
 
-export default App;
+

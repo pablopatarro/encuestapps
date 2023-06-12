@@ -1,0 +1,18 @@
+{
+    "titulo": "Encuestas",
+    "url": "/",
+    "listaItem": 
+    [
+        {
+            "url": "/registro",
+            "id": "1",
+            "titulo": "Registrar"
+        }, 
+        {
+            "url": "/inicio",
+            "id": "2",
+            "titulo": "Iniciar sesión"
+        }
+       
+    ]
+}
