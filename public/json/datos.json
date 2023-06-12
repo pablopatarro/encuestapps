@@ -1,12 +1,12 @@
 {
-    "titulo": "Encuestas",
+    "titulo": "EncuestApps",
     "url": "/",
     "listaItem": 
     [
         {
             "url": "/registro",
             "id": "1",
-            "titulo": "Registrar"
+            "titulo": "Registrarse"
         }, 
         {
             "url": "/inicio",

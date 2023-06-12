@@ -5,7 +5,7 @@ export default function ErrorPage() {
   console.error(error);
 
   return (
-    <div id="error-page">
+    <div id="error-page" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100vh" }}>
       <h1>Oops!</h1>
       <p>Ha habido un error inesperado.</p>
       <Link to="/">Volver a la página principal</Link>

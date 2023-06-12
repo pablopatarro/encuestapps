@@ -1,0 +1,45 @@
+/* Animación para el texto bienvenida. */
+@keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+/* Color de fondo de la app */
+body {
+    background-color: #fae6ff
+    ;
+}
+
+/* Estilo de la tabla */
+.tablaEncuestas {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+/* Estilo de las celdas */
+.tablaEncuestas th,
+.tablaEncuestas td {
+  text-align: center; /* Centrar el texto */
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Estilo del head de la tabla */
+.tablaEncuestas thead th {
+  font-weight: bold; /* Texto en negrita */
+  background-color: #7ca7db; /* Fondo gris claro */
+  color: #333; /* Color del texto */
+}
+
+/* Estilo para filas alternas (stripped) */
+.tablaEncuestas tbody tr:nth-child(even) {
+  background-color: #f0c7fc;
+}
